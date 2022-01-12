@@ -1,0 +1,72 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bgD img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+.Download {
+    color:black;
+    text-align:center;
+}
+
+.Download h1 {
+    font-size: 2rem;    
+    padding: 2rem;
+}
+
+.Download h4 {
+    font-size: 1.5rem;    
+}
+
+.submitButton {
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(255,0,0, .5);
+}
+
+.upload {
+    padding-top: 5rem;
+    color: black;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+    .upload h4 {
+        font-size: 1.5rem;
+    }
+
+.anzeige {
+    display:grid;
+    grid-auto-flow:column;
+    justify-content:space-around;
+    padding: 2rem;       
+}
+
+    .anzeige button {
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: rgba(255,0,0, .5);
+    }
+
+    .anzeige a {
+        color: black;
+        font-size:1.5rem;
+    }
+
+
+.abschluss {
+    width: 100%;
+}

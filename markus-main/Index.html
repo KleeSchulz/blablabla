@@ -1,0 +1,803 @@
+﻿<!doctyp html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <script src="js/Script1.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?forceLang=de&customize=1&thirdparty=1&always=1&noGeoIp=1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Markus Burkard Fahrschule</title>
+
+</head>
+<body>
+
+    <div class="bg"><img src="Bilder/background.jpg" /></div>
+
+    <!-- NavBar -->
+
+    <nav class="navbar">
+
+        <a href="#seite_fahrlehrer"><img id="logo" src="Bilder/Logo Fahrschule.png" /></a>
+
+        <a  class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#seite_fahrlehrer">Fahrlehrer</a></li>
+                <li><a href="#seite_fuehrerschein">Führerscheinklassen</a></li>
+                <li><a href="#seite_standort">Standort</a></li>
+                <li><a href="#seite_kontakt">Kontakt</a></li>
+                <li><a href="Unterrichte.php">Unterrichte</a></li>
+                <li><a href="Job.php">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://instagram.com/fahrschule_burkart?utm_medium=copy_link" target="_blank"><img id="social" src="Bilder/instagram.png" /></a></li>
+                <li><a href="https://www.facebook.com/Fahr-und-Verkehrsschule-Markus-Burkart-1605093176393160/" target="_blank"><img id="social" src="Bilder/facebook.png" /></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NavBar Ende -->
+
+    <main role="main">
+
+        <!-- Carusel -->
+
+        <div id="seite_fahrlehrer" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button id="carousel_b" data-bs-target="#seite_fahrlehrer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel_b" data-bs-target="#seite_fahrlehrer" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="carousel_b" data-bs-target="#seite_fahrlehrer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button id="carousel_b" data-bs-target="#seite_fahrlehrer" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button id="carousel_b" data-bs-target="#seite_fahrlehrer" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Bilder/_MG_1776_mg.jpg" />
+                    <a id="beschriftungMarkus"><font class="name">Markus Burkart</font>, 46 Jahre und Kraftverkehrtsmeister. <br /> Bildet in den Führerscheinen: <br /> B/BE, C/CE, A, D/DE aus. <br /> Außerdem Ausbildungsfahrlehrer, <br /> Ausbilder für Ladungssicherung gem VDI Richtlinien 2700 a <br /> und Gabelstaplerfahren</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Bilder/_MG_1767_mg.jpg" />
+                    <a id="beschriftungBabera"><font class="name">Barbara Barthelmes</font>, geboren am 27.09.1965. <br /> Bildet die Führerscheine B/BE aus.</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Bilder/_GO_0406.jpg" />
+                    <a id="beschriftungRobert"><font class="name">Robert Fricke</font>, 32 Jahre alt. <br /> Bildet die Führerscheine B/BE aus.</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Bilder/_GO_0408.jpg" />
+                    <a id="beschriftungMarcus"><font class="name">Marcus Hacker</font>, geboren am 13.03.1980. <br /> Bildet die Führerscheine B/BE, C/CE aus.<br /> Außerdem Ausbildungsfahrlehrer </a>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Bilder/_GO_0411.jpg" />
+                    <a id="beschriftungJassin"><font class="name">Jassin Ajnaou</font>, geboren am 10.01.1999. <br /> Bildet die Führerscheine B/BE aus.</a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#seite_fahrlehrer" data-bs-slide="prev">
+                <img src="Bilder/arrow-gfc12097ad_1280.png" />
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#seite_fahrlehrer" data-bs-slide="next">
+                <img src="Bilder/arrow-gfc12097ad_1280.png" />
+            </button>
+        </div>
+
+        <!-- Carusel Ende -->
+        <!-- Führerscheine -->
+
+        <div class="fuehrerschein">
+            <h1 id="seite_fuehrerschein">Führerscheine und Fortbildungen</h1>
+        </div>
+
+        <div class="fschein">
+            <h1>PKW</h1>
+        </div>
+
+        <!-- PKW Klasse auswählen -->
+        <div class="container">
+            <div class="fklassengrid">
+                <div class="klasseB">
+                    <button onclick="pkw(0)" class="itemB">
+                        <img class="iconsbackground BR" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsB B" id="test" src="Icons/svg/B.svg" />
+                        <figcaption class="fkbezeichung">B</figcaption>
+                    </button>
+                </div>
+                <div class="klasseB">
+                    <button onclick="pkw(1)" class="itemBE">
+                        <img class="iconsbackground BR" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsBE B" src="Icons/svg/BE.svg" />
+                        <figcaption class="fkbezeichung">BE</figcaption>
+                    </button>
+                </div>
+                <div class="klasseB">
+                    <button onclick="pkw(2)" class="itemBE">
+                        <img class="iconsbackground BR" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsBE B" src="Icons/svg/BE.svg" />
+                        <figcaption class="fkbezeichung">B96</figcaption>
+                    </button>
+                </div>
+                <div class="klasseB">
+                    <button onclick="pkw(3)" class="itemB">
+                        <img class="iconsbackground BR" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsB B" src="Icons/svg/B.svg" />
+                        <figcaption class="fkbezeichung">B 196</figcaption>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infotexte die angezeigt werden -->
+
+        <div class="showB">
+            <div class="bildB">
+                <img src="Bilder/auto.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>18 Jahre alt, <br /> 17 Jahre beim Begleitenden Fahren, <br /> Biometrisches Passfoto, <br /> Sehtest, <br /> Erste-Hilfe-Kurs, <br /> Personalausweis oder Reisepass, <br /> Meldebestätigung </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>nach Bedarf, <br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 4,<br /> Dunkelfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten, bei Ersterteilung: 12 <br />(bei Erweiterung nur 6),<br /> Zusatzstoff: 2</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>KFZ bis zu 3.500 kg,<br /> max. 8 Personen außer dem Fahrer,<br /> Anhängerregelung:<br /> KFZ zG Anhänger max. 750 kg immer erlaubt,<br /> KFZ zG Anhänger über 750 kg erlaubt, wenn zG der Fahrzeugkombination max. 3.500 kg</p>
+            </div>
+        </div>
+        <div class="showB">
+            <div class="bildB">
+                <img src="Bilder/auto.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Besitz der Klasse B,<br /> 18 Jahre alt,<br /> 17 Jahre beim Begleitenden Fahren,<br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 3,<br /> Autobahnfahrt: 1,<br /> Nachtfahrt: 1</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>KFZ zG Anhänger über 750kg, max. 3.500kg <br /><br /><br /><br /></p>
+            </div>
+        </div>
+        <div class="showB">
+            <div class="bildB">
+                <img src="Bilder/auto.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Besitz der Klasse B,<br /> 18 Jahre alt,<br /> 17 Jahre beim Begleitenden Fahren,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> mindestens 6,<br /> Theorie: 2,5,<br /> Praxis: 4,5</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Keine  </p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>KFZ zG Anhänger über 750 kg,<br /> KFZ zG Anhänger der Fahrzeugkombination max. 4.250 kg</p>
+            </div>
+        </div>
+        <div class="showB">
+            <div class="bildB">
+                <img src="Bilder/auto.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Besitz der Klasse B <br /> 25 Jahre alt<br />Welche Dokumente benötigt werden müssen Sie bei uns nachfragen, da dies unterschiedlich ist</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf, <br />Theorie: 4, <br /> Praxis: 5 </p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>keine</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Lichtkraftrad der Klasse A1, <br /> Nur innerhalb Deutschlands erlaubt, <br /> Keine Aufstiegsregelung vorhanden, da nicht der A1 Führerschein erworben wird, sonder nur die Schlüsselzahl 196 </p>
+            </div>
+        </div>
+
+
+        <div class="fschein">
+            <h1>Zweirad</h1>
+        </div>
+
+        <!-- Motorrad Klasse auswählen -->
+        <div class="container">
+            <div class="fklassengrid">
+                <div class="klasseA">
+                    <button onclick="zweirad(0)" class="itemA">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsA A" src="Icons/svg/AM.svg" />
+                        <figcaption class="fkbezeichung">AM</figcaption>
+                    </button>
+                </div>
+                <div class="klasseA">
+                    <button onclick="zweirad(1)" class="itemA">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsA A" src="Icons/svg/A1.svg" />
+                        <figcaption class="fkbezeichung">A1</figcaption>
+                    </button>
+                </div>
+                <div class="klasseA">
+                    <button onclick="zweirad(2)" class="itemA2">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsA2 A" src="Icons/svg/A2.svg" />
+                        <figcaption class="fkbezeichung">A2</figcaption>
+                    </button>
+                </div>
+                <div class="klasseA">
+                    <button onclick="zweirad(3)" class="itemA">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsA A" src="Icons/svg/A.svg" />
+                        <figcaption class="fkbezeichung">A</figcaption>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infotexte die angezeigt werden -->
+
+        <div class="showA">
+            <div class="bildA">
+                <img src="Bilder/simson-gc31c4c4de_1920.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>15 Jahre alt,<br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Theorie/Doppel¬stunden á 90 Minuten, bei Ersterteilung: 12 (bei Erweiterung nur 6),<br /> Zusatzstoff: 2</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Max. 45km/h,<br /> max. 50cm3,<br /> max.4kW,<br /> vierrädrige Leicht-KFZ mit Leergewicht max. 350kg</p>
+            </div>
+        </div>
+        <div class="showA">
+            <div class="bildA">
+                <img src="Bilder/_MG_1785_mg.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>16 Jahre alt, <br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 4, <br />Nachtfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten, bei Ersterteilung: 12 (bei Erweiterung nur 6),<br /> Zusatzstoff: 4 </p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Klasse AM,<br /> Krafträder max. 125cm3,<br /> max. 11kW,<br /> Leistung/Gewicht max. 0,1kW/kg,<br /> Dreirädrige KFZ max. 15kW</p>
+            </div>
+        </div>
+        <div class="showA">
+            <div class="bildA">
+                <img src="Bilder/_MG_1786_mg.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>18 Jahre alt, <br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 4, <br />Nachtfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten, bei Ersterteilung: 12 (bei Erweiterung nur 6),<br /> Zusatzstoff: 4 </p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung,<br /> falls zweijähriger Vorbesitz von A1 nur praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Klassen AM und A1,<br /> Krafträder max. 35kW,<br /> Leistung/Gewicht 0,2kW/kg </p>
+            </div>
+        </div>
+        <div class="showA">
+            <div class="bildA">
+                <img src="Bilder/_MG_1787_mg.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>24 Jahre, <br /> 20 Jahre Aufstieg von A2 auf A,<br /> 21 Jahre für Trikes, <br />Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Keine für Aufstiege von A2 auf A,<br /> Direkterwerb von A: <br /> Nach Bedarf,<br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 4,<br /> Nachtfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten, bei Ersterteilung: 12 (bei Erweiterung nur 6),<br /> Zusatzstoff: 4</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung,<br /> falls zweijähriger Vorbesitz von A2 nur praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Klassen AM, A1 und A2,<br /> Krafträder über 35kW,<br /> Dreirädrige Krafträder über 15kW,<br /> Dreirädrige KFZ über 15kW, über 45km/h </p>
+            </div>
+        </div>
+
+        <div class="fschein">
+            <h1>LKW</h1>
+        </div>
+
+        <!-- LKW Klasse auswählen -->
+
+        <div class="container">
+            <div class="fklassengrid">
+                <div class="klasseC">
+                    <button onclick="lkw(0)" class="itemC">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsC C" src="Icons/svg/C.svg" />
+                        <figcaption class="fkbezeichung">C</figcaption>
+                    </button>
+                </div>
+                <div class="klasseC">
+                    <button onclick="lkw(1)" class="itemCE">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsCE C" src="Icons/svg/CE.svg" />
+                        <figcaption class="fkbezeichung">CE</figcaption>
+                    </button>
+                </div>
+                <div class="klasseC">
+                    <button onclick="lkw(2)" class="itemC1">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsC1 C" src="Icons/svg/C1.svg" />
+                        <figcaption class="fkbezeichung">C1</figcaption>
+                    </button>
+                </div>
+                <div class="klasseC">
+                    <button onclick="lkw(3)" class="itemCE">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsC1E C" src="Icons/svg/C1E.svg" />
+                        <figcaption class="fkbezeichung">C1E</figcaption>
+                    </button>
+                </div>
+                <div class="klasseC">
+                    <button onclick="lkw(4)" class="itemC">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsC C" src="Icons/svg/C.svg" />
+                        <figcaption class="fkbezeichung">Module 1-5</figcaption>
+                    </button>
+                </div>
+                <div class="klasseC">
+                    <button onclick="lkw(5)" class="itemCL">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsCL C" src="Icons/svg/C.svg" />
+                        <figcaption class="fkbezeichung">Ladungssicherung</figcaption>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Infotexte die angezeigt werden -->
+
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/lkw.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Klasse B,<br /> 21 Jahre,<br /> 18 Jahre nach erfolgter Grundqualifikation,<br /> Personen während oder nach „spezifischer Berufsausbildung“,<br /> Biometrisches Passfoto,<br /> augenärztliches Gutachten,<br /> ärztliche Bescheinigung,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Kopie des Vorhandenen Führerscheins </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 2,<br /> Nachtfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten bei Erweiterung 6,<br /> Zusatzstoff: 10</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>5 Jahre gültig,<br /> Klasse C1,<br /> KFZ zG über 3.500,<br /> max. 8 Personen außer Fahrer,<br /> zG Anhänger bis 750kg </p>
+            </div>
+        </div>
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/lkw.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Klasse C,<br /> 21 Jahre,<br /> 18 Jahre nach erfolgter Grundqualifikation,<br /> Personen während oder nach „spezifischer Berufsausbildung“,<br /> Biometrisches Passfoto,<br /> augenärztliches Gutachten,<br /> ärztliche Bescheinigung,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Kopie des Vorhandenen Führerscheins </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 5,<br /> Autobahnfahrt: 2,<br /> Nachtfahrt: 3,<br /> Theorie/Doppel¬stunden á 90 Minuten bei Erweiterung 6,<br /> Zusatzstoff: 4 </p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Klassen BE,<br /> C1E,<br /> T,<br /> sowie bei Vorbesitz von D und D1 DE und D1E,<br /> KFZ der Klasse C zG des Anhängers über 750kg </p>
+            </div>
+        </div>
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/lkw.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Klasse B,<br /> 18 Jahre,<br /> Biometrisches Passfoto,<br /> augenärztliches Gutachten,<br /> ärztliche Bescheinigung,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Kopie des Vorhandenen Führerscheins </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 3,<br /> Autobahnfahrt: 1,<br /> Nachtfahrt: 1,<br /> Theorie/Doppel¬stunden á 90 Minuten bei Erweiterung 6,<br /> Zusatzstoff: 6</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>5 Jahre gültig,<br /> KFZ zG über 3500kg bis max. 7500kg,<br /> zG Anhängers bis 750kg </p>
+            </div>
+        </div>
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/lkw.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>Klasse C1,<br /> 18 Jahre,<br /> Biometrisches Passfoto,<br /> augenärztliches Gutachten,<br /> ärztliche Bescheinigung,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Kopie des Vorhandenen Führerscheins </p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Überlandfahrt: 3,<br /> Autobahnfahrt: 1,<br /> Nachtfahrt: 1</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Praktische Prüfung </p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Klasse C1 mit Anhänger zG Anhängers über 750kg,<br /> zG Fahrzeugkombination max. 12.000kg,<br /> Klasse B mit Anhänger zG Anhängers über 3500kg,<br /> zG Fahrzeugkombination max. 12.000kg </p>
+            </div>
+        </div>
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/_MG_1813.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Modul 1</h1>
+                <p>Eco-Training = 1.1, 1.2, 1.3 <br /> Kenntnisbereich 1</p>
+                <h1>Modul 3</h1>
+                <p>Sicherheitstechnik und Fahrsicherheit = 1.2, 3.1, 3.5 <br /> Kenntnisbereich 1 und 3</p>
+                <h1>Modul 5</h1>
+                <p>Ladungssicherung = 1.4 <br /> Kenntnissbereich 1</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Modul 2</h1>
+                <p>Sozialvorschriften = 2.1, 2.2 <br /> Kenntnisbereich 2</p>
+                <h1>Modul 4</h1>
+                <p>Schaltstelle Fahrer = 3.2, 3.3, 3.4, 3.6, 3.7 <br /> Kenntnisbereich 3 </p>
+            </div>
+        </div>
+        <div class="showC">
+            <div class="bildC">
+                <img src="Bilder/_MG_1812.jpg" />
+            </div>
+            <div class="ladung">
+                <h1>Wir bieten Ladungssicherung gemäß Vdi Richtlinien 2700 an</h1>                
+            </div>
+        </div>
+
+        <div class="fschein">
+            <h1>Traktor und Gabelstabler</h1>
+        </div>
+
+        <!--Träker Klasse auswählen-->
+
+        <div class="container">
+            <div class="fklassengrid">
+                <div class="klasseT">
+                    <button onclick="traker(0)" class="itemT">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsT T" src="Icons/svg/traktor.svg" />
+                        <figcaption class="fkbezeichung">L</figcaption>
+                    </button>
+                </div>
+                <div class="klasseT">
+                    <button onclick="traker(1)" class="itemT">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsT T" src="Icons/svg/traktor.svg" />
+                        <figcaption class="fkbezeichung">T</figcaption>
+                    </button>
+                </div>
+                <div class="klasseT">
+                    <button onclick="traker(2)" class="itemT">
+                        <img class="iconsbackground" src="Bilder/classic-295180_1280.png" />
+                        <img class="iconsG T" src="Icons/svg/gabel.svg" />
+                        <figcaption class="fkbezeichung">Gabelstabler</figcaption>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Infotexte die angezeigt werden-->
+
+        <div class="showT">
+            <div class="bildT">
+                <img src="Bilder/tractor-gca572fdb6_1920.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>16 Jahre,<br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Theorie/Doppel¬stunden á 90 Minuten bei Ersterteilung: 12, bei Erweiterung 6,<br /> Zusatzstoff: 2</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorieprüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Zugmaschinen für land- und forstwirtschaftliche Zwecke,<br /> max. 40km/h,<br /> mit Anhänger max. 25km/h,<br /> Selbstfahrende Arbeitsmaschinen und Futtermischwagen,<br /> Stapler und andere Flurförderfahrzeuge max. 25km/h </p>
+            </div>
+        </div>
+
+        <div class="showT">
+            <div class="bildT">
+                <img src="Bilder/tractor-gc8de6634f_1920.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>16 Jahre,<br /> Biometrisches Passfoto,<br /> Sehtest,<br /> Erste-Hilfe-Kurs,<br /> Personalausweis oder Reisepass,<br /> Meldebestätigung</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf,<br /> Theorie/Doppel¬stunden á 90 Minuten bei Ersterteilung: 12, bei Erweiterung 6,<br /> Zusatzstoff: 6</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Zugmaschinen für land- und forstwirtschaftliche Zwecke max. 60km/h,<br /> Fahrer unter 18 max. 40km/h,<br /> Selbstfahrende Arbeitsmaschinen und Futtermischwagen max. 40km/h </p>
+            </div>
+        </div>
+        <div class="showT">
+            <div class="bildT">
+                <img src="Bilder/machine-g88ece0fc0_1920.jpg" />
+            </div>
+            <div class="voraussetzung">
+                <h1>Voraussetzung</h1>
+                <p>17 Jahre</p>
+            </div>
+            <div class="übungsstunden">
+                <h1>Übungsstunden</h1>
+                <p>Nach Bedarf</p>
+            </div>
+            <div class="prüfung">
+                <h1>Prüfung</h1>
+                <p>Theorie und praktische Prüfung</p>
+            </div>
+            <div class="danach">
+                <h1>Was darf ich danach fahren?</h1>
+                <p>Gablestabler</p>
+            </div>
+        </div>
+
+                
+        <!-- Standort -->
+
+        <div class="interesse">
+            <h1 id="seite_standort">Interesse? </h1>
+        </div>
+
+        <div class="standort">
+            <h1>Standort und Öffnungszeiten</h1>
+        </div>
+
+        <div class="standorte">
+            <div class="sort">
+                <h2>Rothemann</h2>
+            </div>
+            <div class="standortBild">
+                <button class="bildButton" onclick="show(0)">
+                    <img class="bild" src="Bilder/_MG_1802_mg.jpg" />
+                    <figcaption class="klickmich">klick mich</figcaption>
+                </button>
+            </div>
+            <div class="sort">
+                <h2>Pilgerzell</h2>
+            </div>
+            <div class="standortBild">
+                <button class="bildButton" onclick="show(1)">
+                    <img class="bild" src="Bilder/_GO_0415.jpg" />
+                    <figcaption class="klickmich">klick mich</figcaption>
+                </button>
+            </div>
+        </div>
+
+        <div class="showKarte">
+            <div class="öffnungszeitenR text">
+                <h1>Standort Rothemann</h1>
+                <br />
+                <h3>Haimbuchstraße 10 <br /> 36124 Eichenzell <br /> Rothemann</h3>
+                <br />
+                <br />
+                <h2>Unterricht</h2>
+                <h3>Di. 18:30 bis 20:00 Uhr <br /> Do. 18:30 bis 20:00Uhr</h3>
+                <br />
+                <br />
+                <h2>Anmeldung</h2>
+                <h3>Di. 18:00 bis 18:30 Uhr <br /> Do. 18:00 bis 18:30Uhr</h3>
+            </div>
+            <div class="rothemann">
+                <a href="https://goo.gl/maps/USwnvGrkQSYskUG58" target="_blank"><img class="google" src="Bilder/rothemann.png" /></a>                                
+            </div>
+
+        </div>
+
+        <div class="showKarte">
+            <div class="pilgerzell">                
+                <a href="https://goo.gl/maps/Qqr43gRx8Cks2soU7" target="_blank"><img class="google" src="Bilder/pilgerzell.png" /></a>
+            </div>
+            <div class="öffnungszeitenP text">
+                <h1>Standort Pilgerzell</h1>
+                <br />
+                <h3>In den Gründen 14 <br /> 36093 Künzell <br /> Pilgerzell</h3>
+                <br />
+                <br />
+                <h2>Unterricht</h2>
+                <h3>Mo. 18:30 bis 20:00 Uhr <br /> Mi. 18:30 bis 20:00Uhr</h3>
+                <br />
+                <br />
+                <h2>Anmeldung</h2>
+                <h3>Mo. 18:00 bis 18:30 Uhr <br /> Mi. 18:00 bis 18:30Uhr</h3>
+            </div>
+        </div>
+
+
+        <!-- Kontakt-->
+
+        <div class="kontakt">
+            <h1 id="seite_kontakt">Kontaktieren Sie uns </h1>
+        </div>
+
+        <div class="kontakte">
+            <div class="profilfahrlehrer p1">
+                <img class="profil" src="Bilder/_MG_1806_mgkopp.jpg" />
+                <div class="nummer">
+                    <address>
+                        <img class="tel" src="Icons/outline_call_black_24dp.png" />
+                        <a href="tel:+491604422796">+49 160 4422796</a>
+                        <br />
+                        <img class="tel" src="Icons/icons8-whatsapp-50.png" />
+                        <a href="https://wa.me/491604422796">+49 160 4422796</a>
+                        <br />
+                        <img class="mail" src="Icons/outline_email_black_24dp.png" />
+                        <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a>
+                    </address>
+                </div>
+            </div>
+            <hr class="trenner"/>
+            <div class="profilfahrlehrer p2">
+                <img class="profil" src="Bilder/_MG_1769kopp.jpg" />
+                <div class="nummer">
+                    <address>
+                        <img class="tel" src="Icons/outline_call_black_24dp.png" />
+                        <a href="tel:+491712775360">+49 171 2775360</a>
+                        <br />
+                        <img class="tel" src="Icons/icons8-whatsapp-50.png" />
+                        <a href="https://wa.me/491712775360">+49 171 2775360</a>
+                        <br />
+                        <img class="mail" src="Icons/outline_email_black_24dp.png" />
+                        <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a>
+                    </address>
+                </div>
+            </div>
+            <hr class="trenner" />
+            <div class="profilfahrlehrer p3">
+                <img class="profil" src="Bilder/_GO_0406kopp.jpg" />
+                <div class="nummer">
+                    <address>
+                        <img class="tel" src="Icons/outline_call_black_24dp.png" />
+                        <a href="tel:+4916090359397">+49 160 90359397</a>
+                        <br />
+                        <img class="tel" src="Icons/icons8-whatsapp-50.png" />
+                        <a href="https://wa.me/4916090359397">+49 160 90359397</a>
+                        <br />
+                        <img class="mail" src="Icons/outline_email_black_24dp.png" />
+                        <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a>
+                    </address>
+                </div>
+            </div>
+            <hr class="trenner" />
+            <div class="profilfahrlehrer p4">
+                <img class="profil" src="Bilder/_GO_0408kopp.jpg" />
+                <div class="nummer">
+                    <address>
+                        <img class="tel" src="Icons/outline_call_black_24dp.png" />
+                        <a href="tel:+4915117602294">+49 151 17602294</a>
+                        <br />
+                        <img class="tel" src="Icons/icons8-whatsapp-50.png" />
+                        <a href="https://wa.me/4915117602294">+49 151 17602294</a>
+                        <br />
+                        <img class="mail" src="Icons/outline_email_black_24dp.png" />
+                        <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a>
+                    </address>
+                </div>
+            </div>
+            <hr class="trenner" />
+            <div class="profilfahrlehrer p5">
+                <img class="profil" src="Bilder/_GO_0411kopp.jpg" />
+                <div class="nummer">
+                    <address>
+                        <img class="tel" src="Icons/outline_call_black_24dp.png" />
+                        <a href="tel:+491702786139">+49 170 2786139</a>
+                        <br />
+                        <img class="tel" src="Icons/icons8-whatsapp-50.png" />
+                        <a href="https://wa.me/491702786139">+49 170 2786139</a>
+                        <br />
+                        <img class="mail" src="Icons/outline_email_black_24dp.png" />
+                        <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img class="abschluss" src="Bilder/_MG_1758_mg1.png" />
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="Datenschutz.html">Datenschutz</a>
+                <a href="Impressum.html">Impressum</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/fahrschule_burkart?utm_medium=copy_link" target="_blank"><img id="social" src="Bilder/instagram.png" /></a>
+                <a href="https://www.facebook.com/Fahr-und-Verkehrsschule-Markus-Burkart-1605093176393160/" target="_blank"><img id="social" src="Bilder/facebook.png" /></a>                
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

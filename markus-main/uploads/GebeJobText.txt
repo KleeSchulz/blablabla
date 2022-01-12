@@ -1,0 +1,17 @@
+<div>
+ <h2 class="teaser">Du suchst eine neue spannende Arbeit?</h2>
+ <h2 class="teaser">Du bist voll auf begeistert für motorisierte Fahrzeuge? </h2>
+ <h2 class="teaser">Du liebst es zu unterrichten und den Schülern etwas bei zu bringen?</h2>
+ <br />
+ <h1 class="komminunserteam">Dann bist du bei uns genau richtig!</h1>
+ <h2 class="teaser">Wir bieten dir: einen attraktiven Arbeitsplatz mit einer lockeren Atmosphäre, <br /> eine faire Bezahlung <br /> und ein freundliches und dynamisches Team</h2>
+ <br />
+ <h1 class="komminunserteam">Haben wir dein Interesse geweckt?</h1>
+ <br />     
+ <a href='Job.pdf' target='_blank' class='linkpdf'>Klicke hier für mehr Informationen</a>                                
+ <br />
+ <br />
+ <br />
+ <h1 class="komminunserteam">Bewirb dich jetzt ganz einfach!</h1>
+ <h2 class="teaser">Schreibe eine kurze Mail mit Lebenslauf und kleiner Vorstellung wer du bist an <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a><br /> oder ruf uns unter <a href="tel:+49066565048348">06656 50 48 34 8</a> an. </h2>
+</div>

@@ -1,0 +1,6 @@
+<div>
+ <h2 class="teaser">Leider haben wir gerade kein Job Angebot für dich.</h2>
+ <br/>
+ <h1 class="komminunserteam">Bewirb dich einfach initiativ</h1>
+ <h2 class="teaser">Schreibe eine kurze Mail mit Lebenslauf und kleiner Vorstellung wer du bist an <a href="mailto:kontakt@fahrschule-burkart.de">kontakt@fahrschule-burkart.de</a><br /> oder ruf uns unter <a href="tel:+49066565048348">06656 50 48 34 8</a> an. </h2>
+</div>

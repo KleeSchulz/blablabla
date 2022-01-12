@@ -1,0 +1,2121 @@
+﻿* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;        
+}
+
+.bg img{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.75;
+}
+
+
+/*==========
+    Navbar
+  ==========*/
+
+#logo {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 22rem;
+    height: auto;   
+}
+
+.navbar {
+    position: fixed;
+    z-index:10;
+    width:100%;    
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    font-size: 1.6rem;
+    justify-content:center;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;  
+}
+
+.navbar-links li:hover {
+    background-color: rgb(33, 33, 33, .5);
+    border-radius: 10px;
+}
+
+.navbar-links li a.active {
+    color:#f58221;
+}
+
+/*soziale Medien*/
+
+.social {
+    position:absolute;
+    top: .25rem;
+    right: 0;
+}
+
+.social ul {
+    margin:0;
+    padding:0; 
+    display:flex; 
+}
+
+.social li {
+    list-style:none;
+}
+
+.social li img {
+    padding-right:3rem;
+    display: block; 
+    width: 8rem;
+    height: auto;
+}
+
+/*Hamburgermenü*/
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.toggle-button .bar {
+    height: 3.5px;
+    width: 100%; 
+    background-color: white;
+    border-radius: 10px; 
+}
+
+/*============
+    Carousel
+  ============*/
+
+#seite_fahrlehrer {
+    display: flex;
+    height: 80%;
+    top: -2rem;    
+}
+
+.carousel-indicators {
+    width:100%;    
+    margin:0;    
+}
+
+
+.carousel-control-prev {
+    width: 14%;    
+}
+
+.carousel-control-prev img {
+    max-width: 50%;
+    transform: rotate(180deg);
+}
+
+.carousel-control-prev img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 green);
+}
+
+.carousel-control-next {
+    width: 14%;    
+}
+
+.carousel-control-next img {
+    max-width: 50%;
+}
+
+.carousel-control-next img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 green);
+}
+
+.carousel-inner {
+    max-width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    overflow:hidden;
+    
+}
+
+.name{
+    font-weight:bold;
+}
+
+#beschriftungMarkus {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: left;
+    padding: 9px;
+}
+
+#beschriftungBabera {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    text-align: left;
+    padding: 9px;
+}
+
+#beschriftungRobert {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: left;
+    padding: 9px;
+}
+
+#beschriftungMarcus {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    text-align: left;
+    padding: 9px;
+}
+
+
+#beschriftungJassin {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    text-align: left;
+    padding: 9px;
+}
+/*======================
+    Führerscheinklassen
+  ======================*/
+
+.fuehrerschein {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.fuehrerschein h1 {
+    font-size: 5rem;
+    color: black;
+}
+
+/*Führerscheinklasse B */
+
+.fschein {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5rem;
+   
+}
+
+.fschein h1 {
+    font-size: 4rem;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    height:40%;
+    border-style:ridge;
+    border-radius: 10px;
+    border-color:white;
+    background: rgba(255,0,0, .6);
+}
+
+.fklassengrid {
+    display: grid;
+    grid-template-columns: repeat(auto,minmax(auto,1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(auto,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;        
+}
+
+.fklassengrid button {    
+    height: 28rem;
+}
+
+.fklassengrid::-webkit-scrollbar {    
+    width: 12px;
+}
+
+.fklassengrid::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0 );
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.fklassengrid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.8);
+}
+
+
+
+.iconsbackground {
+    position: relative;
+    width: 20rem;
+    z-index: 1;
+    opacity: .75;
+}
+
+
+/* PKW */
+
+
+.itemB {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemBE {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.iconsB {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    top: -50%;    
+}
+
+.iconsBE {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    top: -45%;
+}
+
+.itemB figcaption {
+    position: relative;
+    top: -25%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.itemBE figcaption {
+    position: relative;
+    top: -10%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.showB {
+    display: none;
+    padding: 5rem 10% 0rem 10%;    
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,minmax(auto,.5fr));
+    grid-template-rows: repeat(2, minmax(auto,.5fr));
+    justify-content: center;
+    align-content:center;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.showB img {
+    grid-column-start:1;
+    grid-column-end:span 2;
+    grid-row-start:1;
+    grid-row-end:span 2;
+    justify-content:center;
+    align-content:center;
+    width: 150%;
+}
+
+.voraussetzung {
+    grid-column:3;
+    grid-row:1;
+    font-size: 2rem;
+    color:black;
+    padding-right:2rem;   
+}
+
+    .voraussetzung h1 {
+        text-decoration: underline;
+    }
+
+.übungsstunden {
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 2rem;
+    color: black;
+}
+
+    .übungsstunden h1 {
+        text-decoration: underline;
+    }
+
+.prüfung {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 2rem;
+    color: black;
+    padding-right: 2rem;
+}
+
+    .prüfung h1 {
+        text-decoration: underline;
+    }
+
+.danach {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 2rem;
+    color: black;   
+}
+
+    .danach h1 {
+        text-decoration: underline;
+    }
+
+.ladung {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 2rem;
+    color: black;
+    padding-right: 2rem;
+    text-decoration: none;
+}
+
+/* Zweirad */
+
+.itemA {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemA2 {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.iconsA {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    top: -55%;
+}
+
+.iconsA2 {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    top: -62%;
+}
+
+.itemA figcaption {
+    position: relative;
+    top: -35%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.itemA2 figcaption {
+    position: relative;
+    top: -40%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.showA {
+    display: none;
+    padding: 5rem 10% 0rem 10%;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,minmax(auto,.5fr));
+    grid-template-rows: repeat(2, minmax(auto,.5fr));
+    justify-content: center;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.showA img {
+    grid-column-start:1;
+    grid-column-end:span 2;
+    grid-row-start:1;
+    grid-row-end:span 2;
+    justify-content:center;
+    align-content:center;
+    width: 150%;
+}
+
+
+/* LKW */
+
+.itemC {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemCE {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemC1 {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemC1E {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.itemCL {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.iconsC {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    top: -45%;
+}
+
+.iconsCL {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    top: -45%;
+}
+
+.iconsCE {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    top: -42%;
+}
+
+.iconsC1 {
+    position: relative;
+    z-index: 2;
+    width: 55%;
+    top: -47%;
+}
+
+.iconsC1E {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    top: -42%;
+}
+
+.itemC figcaption {
+    position: relative;
+    top: -20%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.itemCL figcaption {
+    position: relative;
+    top: -25%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.itemCE figcaption {
+    position: relative;
+    top: -12%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.itemC1 figcaption {
+    position: relative;
+    top: -20%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.showC {
+    display: none;
+    padding: 5rem 10% 0rem 10%;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,minmax(auto,.5fr));
+    grid-template-rows: repeat(2, minmax(auto,.5fr));
+    justify-content: center;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.showC img {
+    grid-column-start:1;
+    grid-column-end:span 2;
+    grid-row-start:1;
+    grid-row-end:span 2;
+    justify-content:center;
+    align-content:center;
+    width: 150%;
+}
+
+/* Träker */
+
+.itemT {
+    border: none;
+    background: none;
+    height: 26%;
+}
+
+.iconsT {
+    position: relative;
+    z-index: 2;
+    width: 40%;    
+    left:-45%;
+    
+}
+
+.itemT figcaption {
+    position: relative;
+    left:-20%;
+    top: 0%;
+    color: #000;
+    font-size: 3rem;
+}
+
+.showT {
+    display: none;
+    padding: 5rem 10% 0rem 10%;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,minmax(auto,.5fr));
+    grid-template-rows: repeat(2, minmax(auto,.5fr));
+    justify-content: center;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.showT img {
+    grid-column-start:1;
+    grid-column-end:span 2;
+    grid-row-start:1;
+    grid-row-end:span 2;
+    justify-content:center;
+    align-content:center;
+    width: 150%;
+}
+
+/* Gablestabler */
+
+
+.iconsG {
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    left: -45%;
+}
+
+
+/*==============
+    Standort
+================*/
+
+.interesse {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    margin-top: 5%;
+    
+}
+
+.interesse h1 {
+    font-size: 5rem;
+    color: black;
+}
+
+.standort {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5rem;
+   
+}
+
+.standort h1 {
+    font-size: 4rem;
+    color: black;
+}
+
+.standorte {
+    display: grid;    
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2,minmax(auto,.5fr));
+    grid-template-rows: repeat(2, minmax(auto,.2fr));    
+    grid-gap:5px;
+    overflow:hidden;    
+}
+
+.sort {        
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+
+.sort h2 {
+    font-size: 4rem;
+    color: black;    
+}
+
+
+.standortBild {
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.bildButton {    
+    width: 100%;
+    border:none;
+    background:none;
+}
+
+.bild {
+    width: 100%;
+}
+
+.klickmich{
+    color:black;
+    text-align:left;
+    font-size:2rem;
+}
+
+/*Google Maps anzeigen*/
+
+.showKarte {
+    display: none;    
+    padding: 5rem;    
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, minmax(auto, .5fr));
+    justify-content: center;
+    background: rgba(255,0,0, .4);
+}
+
+.öffnungszeitenR {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction:column;
+    align-content: center;    
+    
+}
+
+.text {
+    color: black;
+    text-align:center;
+}
+
+.text h1 {
+    font-size:3rem;
+}
+
+.rothemann {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+}
+
+
+.öffnungszeitenP {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.pilgerzell {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+}
+
+.google {
+    width: 60%;
+    height: 100%;
+}
+/* Kontakte */
+
+.kontakt {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    
+}
+
+.kontakt h1 {
+    font-size: 5rem;
+    color: black;
+}
+
+.kontakte {
+    display: grid;   
+    padding-top:2rem;
+    padding-bottom:2rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto, minmax(auto, .5fr));
+    grid-template-rows: repeat(2, minmax(auto, .5fr));
+    grid-gap: 1rem;
+    overflow: hidden;
+}
+
+.trenner {
+    display:none;
+}
+
+.profil {
+    width: 30%;    
+    height:auto;
+}
+
+
+.tel{
+    width:10%;
+}
+
+.mail {
+    width:10%;
+}
+
+.nummer {    
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    height:auto;
+    background-color: rgb(152, 150, 150, 0.75);
+}
+
+.nummer a {
+    text-decoration: none;
+    color: black;
+}
+
+.profilfahrlehrer {      
+    display:flex;
+    justify-content:center;    
+}
+
+
+
+/* abschluss Bild */
+.abschluss {
+    width: 100%;
+}
+
+/* Footer */
+
+
+.footer {
+    display:grid;
+    padding:1rem;
+    grid-auto-flow:column;
+    grid-template-columns:repeat(2, minmax(auto, .5fr));
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    font-size: 1.6rem;
+}
+
+.footer-links {
+    display:flex;        
+}
+
+.footer-links a{    
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;   
+}
+
+.footer-links a:hover {
+    background-color: rgb(33, 33, 33, .5);
+    border-radius: 10px;
+}
+
+/*soziale Medien*/
+
+.footer-social {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.footer-social img {    
+    padding-left: 1%;    
+    width: 60%;
+    height: auto;
+}
+
+
+/*==============
+    Impressum
+================*/
+
+.center {
+    height:77%;
+}
+
+.impressum {
+    display: flex;
+    flex-flow: column;
+    padding-top: 8rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    text-align: center;    
+}
+
+.impressum h1 {
+    font-size: 6rem;
+}
+
+.impressumText {
+    font-size: 2rem;
+    text-decoration:none;
+    color:black;
+}
+.impressumDick {
+    font-weight:bold;
+    color: black;   
+}
+
+/*====================
+    Haftungsausschuss
+======================*/
+
+.haftungsausschuss {
+    padding-top: 8rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.haftung {
+    text-align:center;
+}
+.haftung h1 {
+    font-size: 3rem;   
+}
+
+.text {
+    text-align:left;
+}
+
+.haftungTitel {
+    text-align:center;
+    font-size: 2rem;
+}
+
+/*===============
+    Datenschutz
+=================*/
+
+.datenschutz {
+    padding-top: 8rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    overflow:hidden;
+}
+
+.datenschutz h2 {
+    font-size: 3rem;
+}
+
+.datenschutz h5 {
+    font-size: 1.5rem;
+}
+
+.datenschutz a {
+    font-size: 1.2rem;
+}
+
+.bgD img {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+/*=======
+    JOB
+  =======*/
+
+.job {
+    display: flex;
+    flex-flow: column;
+    padding-top: 8rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    text-align: center;
+}
+
+.jobTitle {
+    font-size: 4rem;
+}
+    
+
+.teaser {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.linkpdf {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+.komminunserteam{
+    font-size: 2.5rem;
+    font-weight:bold;
+}
+
+/*==============
+    Unterricht
+  ==============*/
+
+
+.unterrichtTitel {
+    padding-top: 8rem;
+    color:black;
+    text-align:center;
+}
+
+.unterrichtTitel h1 {
+    font-size:5rem;
+}
+
+.monate {
+    width:100vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto (auto, .5fr));
+    justify-content: space-around;
+    color: black;
+    background-color: white;
+    overflow:hidden;
+}
+
+.monat {    
+    font-size: 3rem;
+    border: none;
+    background:none;
+}
+
+.auswahl {
+    margin-top: 5%;
+    text-align: center;
+    color:black;
+}
+
+.monat:hover {
+    background-color: rgb(33, 33, 33, .5);
+    border-radius: 10px;
+}
+
+.unterricht {
+    width:100%;    
+    margin-top: 2rem;
+    display: grid;  
+    grid-template-columns: repeat(5, minmax(auto, .5fr));
+    padding: 0rem 2rem 2rem 2rem;    
+    text-align:center;
+    grid-gap:1px;
+}
+
+.unterricht h2 {
+    color:black;
+    font-weight: bold;
+}
+
+.unterricht > h2 {
+   background-color: rgba(255,0,0,.5);
+    padding:5%;
+}
+
+.unterricht > h3 {
+    background-color:white;
+    padding:5%;
+}
+
+.unterricht h3 {
+    color: black; 
+    font-size: 2rem;
+    
+}
+
+.plan {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    text-align:center;
+    color:black;
+    font-size: 3rem;
+    padding:5rem;
+}
+
+.klasse {   
+    grid-column-start: 1;
+    grid-column-end: 1;    
+}
+
+.ort {
+    grid-column-start: 2;
+    grid-column-end: 2;    
+}
+
+.datum {
+    grid-column-start: 3;
+    grid-column-end: 3;    
+}
+
+.uhrzeit {
+    grid-column-start: 4;
+    grid-column-end: 4;    
+}
+
+.lektion {
+    grid-column-start: 5;
+    grid-column-end: 5;    
+}
+
+.page-content {
+    position:relative;
+    min-height: 100vh;
+}
+
+.abschlussU {
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+    height: 1%;
+}
+
+.abschlussU img {
+    width: 100%;
+}
+
+.footerU {    
+    display: grid;
+    padding: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, minmax(auto, .5fr));
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    font-size: 1.6rem;
+}
+
+.footerU-links {
+    display:flex;
+}
+
+    .footerU-links a {
+        font-size: 2rem;
+        color: white;
+        padding: 1rem;
+    }
+
+        .footerU-links a:hover {
+            background-color: rgb(33, 33, 33, .5);
+            border-radius: 10px;
+        }
+
+/*soziale Medien*/
+
+.footerU-social {
+    display: flex;
+    justify-content: end;
+}
+
+    .footerU-social img {
+        padding-left: 1%;
+        width: 60%;
+        height: auto;
+    }
+
+
+/*===========================
+    Unterschiedliche Größen 
+  ===========================*/
+
+@media (min-height: 900px) {
+
+    .container {
+        height: 28%;
+        scrollbar-base-color: none;
+    }
+        
+    .nummer {
+        font-size:2rem;
+    }
+  
+}
+@media (max-width: 1200px) and (max-height: 1500px) {
+
+    .toggle-button {
+        display: flex;
+    }
+
+    #logo {
+        width: 17.5rem;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        margin-top: 5rem;
+        display: none;
+        width: 100%;
+    }
+
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links li {
+            text-align: center;
+        }
+
+            .navbar-links li a {
+                padding: .5rem 1rem;
+            }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+    .social {
+        display: none;
+    }
+
+    #seite_fahrlehrer {
+        height: 40%;
+        top: 2rem
+    }
+
+    
+    .fuehrerschein {
+        position: relative;
+        top: 4rem;
+    }
+
+    .container {
+        height: 20%;
+    }
+
+    .iconsT {
+        width: 50%;
+        top: -60%;
+        left: 0;
+    }
+
+    .itemT figcaption {
+        font-size: 3rem;
+        top: -50%;
+        left: 0;
+    }
+
+    .iconsG {
+        width: 50%;
+        top: -60%;
+        left: 0;
+    }
+   
+
+    .showKarte {
+        margin-top: -3rem;
+        overflow: hidden;
+        padding: .5rem;
+    }
+
+    .text {
+        color: black;
+        text-align: center;
+    }
+
+        .text h1 {
+            font-size: 2.5rem;
+        }
+
+        .text h3 {
+            font-size: 2.2rem;
+        }
+
+    .google {
+        width: 95%;
+        height: 100%;
+    }
+
+    .rothemann {
+        padding-left: 5%;
+        grid-column-start: 2;
+        grid-column-end: span 4;
+    }
+
+    .pilgerzell {
+        padding-right: 5%;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    .profil {
+        width: 10rem;
+        height: auto;
+    }
+
+    
+    .kontakte {
+        display: grid;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2,minmax(auto,.5fr));
+        grid-template-rows: repeat(auto, minmax(auto,.5fr));
+    }
+
+    .p1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .p2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .p3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .p4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .p5 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .trenner {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) and (max-height: 1200px) {
+    .container {
+        height:25%;
+    }
+}
+
+@media (max-width: 1200px) and (max-height: 900px) {
+
+    /*=========================================
+    Tablet 
+  =========================================*/
+
+    .toggle-button {
+        display: flex;
+    }
+
+    #logo {
+        width: 17.5rem;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        margin-top: 5rem;
+        display: none;
+        width: 100%;
+    }
+
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links li {
+            text-align: center;
+        }
+
+            .navbar-links li a {
+                padding: .5rem 1rem;
+            }
+
+        .navbar-links.active {
+            display: flex;
+        }
+
+    .social {
+        display: none;
+    }
+
+    #seite_fahrlehrer {
+        height: 65%;
+        top: 2rem
+    }
+
+    #beschriftungMarkus {
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungBabera {
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungRobert {
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungMarcus {
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+
+    #beschriftungJassin {
+        font-size: 2rem;
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+
+    .fuehrerschein {
+        position: relative;
+        top: 4rem;
+    }
+
+        .fuehrerschein h1 {
+            font-size: 3.5rem;
+        }
+
+    .fschein h1 {
+        font-size: 2.7rem;
+    }
+
+    .container {
+        height: 40%;
+    }
+    
+    .iconsT {
+        top: -57%
+    }
+
+    .iconsG {
+        top: -57%
+    }
+
+    .itemT figcaption {
+        top:-35%;
+    }
+    .interesse h1 {
+        font-size: 3.5rem;
+    }
+
+    .standort h1 {
+        font-size: 3rem;
+    }
+
+    .sort h2 {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .showKarte {
+        margin-top: -3rem;
+        overflow: hidden;
+        padding: .5rem;
+    }
+
+    .text {
+        color: black;
+        text-align: center;
+    }
+
+        .text h1 {
+            font-size: 2.5rem;
+        }
+
+        .text h3 {
+            font-size: 2.2rem;
+        }
+
+    .google {
+        width: 95%;
+        height: 100%;
+    }
+
+    .rothemann {
+        padding-left: 5%;
+        grid-column-start: 2;
+        grid-column-end: span 4;
+    }
+
+    .pilgerzell {
+        padding-right: 5%;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    .profil {
+        width: 10rem;
+        height: auto;
+    }
+
+    .kontakt h1 {
+        font-size: 2.5rem;
+    }
+
+    .kontakte {
+        display: grid;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2,minmax(auto,.5fr));
+        grid-template-rows: repeat(auto, minmax(auto,.5fr));
+    }
+
+    .p1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .p2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .p3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .p4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .p5 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .trenner {
+        display: none;
+    }
+
+    .nummer {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 650px) and (max-height: 1080px) {
+
+/*=============================
+    Handy groß
+ =============================*/
+    .navbar-links a {
+        font-size: 1.5rem;
+    }
+
+    #seite_fahrlehrer {
+        height: 30%;
+        top: 2rem
+    }
+
+    #beschriftungMarkus {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungBabera {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungRobert {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungMarcus {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+
+    #beschriftungJassin {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+
+    .fuehrerschein {
+        position: relative;
+        top: 4rem;
+    }
+
+        .fuehrerschein h1 {
+            font-size: 2.3rem;
+        }
+
+    .fschein h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        height: 15%;
+    }
+
+    .fklassengrid {
+        grid-gap: 2rem;
+    }
+
+    .fklassengrid button {
+        height: 14rem;
+    }
+
+    .iconsbackground {
+        width: 10rem;
+    }
+
+    .klasseB {
+        height: 13.5rem;
+    }
+
+    .iconsB {
+        top: -45%;
+    }
+
+    .iconsBE {
+        top: -40%;
+    }
+
+    .itemB figcaption {
+        top: -19%;
+        font-size: 2rem;
+    }
+
+    .itemBE figcaption {
+        font-size: 2rem;
+    }
+
+    .showB img {
+        width: 250%;
+    }
+
+    .voraussetzung {
+        grid-column: 4;
+        grid-row: 1;
+        font-size: 1.2rem;
+    }
+
+        .voraussetzung h1 {
+            font-size: 1.7rem;
+        }
+
+
+    .übungsstunden {
+        grid-column: 4;
+        grid-row: 2;
+        font-size: 1.2rem;
+    }
+
+        .übungsstunden h1 {
+            font-size: 1.7rem;
+        }
+
+    .prüfung {
+        grid-column: 4;
+        grid-row: 3;
+        font-size: 1.2rem;
+    }
+
+        .prüfung h1 {
+            font-size: 1.7rem;
+        }
+
+    .danach {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row: 2;
+        font-size: 1.2rem;
+    }
+
+        .danach h1 {
+            font-size: 1.7rem;
+        }
+
+    .ladung h1 {
+        grid-column: 3;
+        grid-row: 1;
+        font-size: 1.2rem;
+    }
+
+    .klasseA {
+        height: 13.5rem;
+    }
+
+    .iconsA {
+        top: -50%;
+    }
+
+    .iconsA2 {
+        top: -55%;
+    }
+
+    .itemA figcaption {
+        top: -30%;
+        font-size: 2rem;
+    }
+
+    .itemA2 figcaption {
+        top: -32%;
+        font-size: 2rem;
+    }
+
+    .showA img {
+        width: 250%;
+    }
+
+    .klasseC {
+        height: 13rem;
+    }
+
+    .iconsC {
+        top: -42%;
+    }
+
+    .iconsCL {
+        top: -42%;
+        width: 40%;
+    }
+
+    .iconsC1 {
+        top: -45%;
+    }
+
+    .iconsC1E {
+        top: -42%;
+    }
+
+    .iconsCE {
+        top: -42%;
+    }
+
+    .itemC figcaption {
+        top: -20%;
+        font-size: 1.7rem;
+    }
+
+    .itemC1 figcaption {
+        top: -20%;
+        font-size: 1.7rem;
+    }
+
+    .itemCE figcaption {
+        top: -12%;
+        font-size: 1.7rem;
+    }
+
+    .itemC1E figcaption {
+        top: -15%;
+        font-size: 1.7rem;
+    }
+
+    .itemCL figcaption {
+        top: -15%;
+        font-size: 1.7rem;
+    }
+
+    .showC img {
+        width: 250%;
+    }
+
+    .klasseT {
+        height: 13rem;
+    }
+
+    .iconsT {
+        width: 60%;
+        top: -60%;
+        left: 0;
+    }
+
+    .itemT figcaption {
+        font-size: 2rem;
+        top: -50%;
+        left: 0;
+    }
+
+    .iconsG {
+        width: 60%;
+        top: -60%;
+        left: 0;
+    }
+
+    .showT img {
+        width: 250%;
+    }
+
+    .interesse h1 {
+        font-size: 4rem;
+    }
+
+    .standort h1 {
+        margin-top: -8%;
+        font-size: 2rem;
+    }
+
+    .sort h2 {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .showKarte {
+        margin-top: 2%;
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .text {
+        color: black;
+        text-align: center;
+    }
+
+        .text h1 {
+            font-size: 1.5rem;
+        }
+
+        .text h3 {
+            font-size: 1.2rem;
+        }
+
+    .google {
+        width: 95%;
+        height: 70%;
+    }
+
+    .rothemann {
+        padding-left: 5%;
+        grid-column-start: 2;
+        grid-column-end: span 4;
+    }
+
+    .pilgerzell {
+        padding-right: 5%;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    .profil {
+        width: 10rem;
+        height: auto;
+    }
+
+    .kontakt h1 {
+        font-size: 2.5rem;
+    }
+
+    .kontakte {
+        display: block;
+    }
+
+    .trenner {
+        display: flex;
+    }
+
+    .nummer {
+        font-size: 1.5rem;
+    }
+
+    .footer-links a {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        justify-content: end;
+    }
+
+    .footer-social img {
+        padding: 10%;
+        width: 5rem;
+    }
+
+    /*Unterrichte*/
+
+    .monat {
+        font-size: 1.5rem;        
+    }   
+
+    .schrift {
+        font-size: 1.5rem;
+    }
+     .unterricht h3 {
+         font-size: 1.5rem;
+     }
+     .unterricht h4 {
+         font-size: 1.5rem;
+     }
+
+    .footerU-links a {
+        font-size: 1.5rem;
+    }
+
+    .footerU {
+        justify-content: end;
+    }
+
+    .footerU-social img {
+        padding: 10%;
+        width: 5rem;
+    }
+
+}
+
+@media (max-width: 650px) and (max-height: 700px) {
+
+ /*=============================
+    Handy
+ =============================*/
+    
+
+    #seite_fahrlehrer {
+        height: 40%;        
+    }
+
+    #beschriftungMarkus {
+        font-size: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungBabera {
+        font-size: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungRobert {
+        font-size: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #beschriftungMarcus {
+        font-size: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+
+    #beschriftungJassin {
+        font-size: 1rem;
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+
+    .fuehrerschein {
+        position: relative;
+        top: 4rem;
+    }
+
+        .fuehrerschein h1 {
+            font-size: 2rem;
+        }
+
+    .fschein h1 {
+        font-size: 1.7rem;
+    }
+
+    .container {
+        height: 20%;
+    }
+
+    .voraussetzung {
+        grid-column: 4;
+        grid-row: 1;
+        font-size: 1rem;
+    }
+
+        .voraussetzung h1 {
+            font-size: 1.5rem;
+        }
+
+
+    .übungsstunden {
+        grid-column: 4;
+        grid-row: 2;
+        font-size: 1rem;
+    }
+
+        .übungsstunden h1 {
+            font-size: 1.5rem;
+        }
+
+    .prüfung {
+        grid-column: 4;
+        grid-row: 3;
+        font-size: 1rem;
+    }
+
+        .prüfung h1 {
+            font-size: 1.5rem;
+        }
+
+    .danach {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row: 2;
+        font-size: 1rem;
+    }
+
+        .danach h1 {
+            font-size: 1.5rem;
+        }
+
+    .ladung h1 {
+        grid-column: 3;
+        grid-row: 1;
+        font-size: 1rem;
+    }
+
+    /*Unterrichte*/
+
+    .unterrichtTitel h1{
+        font-size: 3rem;
+    }
+
+    .monat {
+        font-size: 1.2rem;
+    }
+
+    .schrift {
+        font-size: 1rem;
+    }
+
+    .unterricht h3 {
+        font-size: 1rem;
+    }
+
+    .unterricht h4 {
+        font-size: 1rem;
+    }
+
+}
